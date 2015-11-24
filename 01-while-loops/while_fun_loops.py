@@ -56,19 +56,35 @@
 
 # print sum_nums(3)
 
-def sum_nums2(num):
-    count = 0
-    num_sum = 0
-    while count != num:
-        if count >= num:
-            count -= 1
-            num_sum += count
-        else:
-           count += 1
-           num_sum += count
-    return num_sum
+# def sum_nums2(num):
+#     count = 0
+#     num_sum = 0
+#     while count != num:
+#         if count >= num:
+#             count -= 1
+#             num_sum += count
+#         else:
+#            count += 1
+#            num_sum += count
+#     return num_sum
 
-print sum_nums2(-3)
+# print sum_nums2(-3)
+
+def fizz_buzz():
+    count = 0
+    while count < 101:
+        count += 1
+        if count % 3 == 0 and count % 5 == 0:
+            print "FizzBuzz"
+        elif count %3 == 0 :
+            print "Fizz"
+        elif count % 5 == 0:
+            print "Buzz"
+        else:
+            print count
+
+fizz_buzz()
+
 
 
 
