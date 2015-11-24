@@ -22,15 +22,54 @@
 #         print count
 #     count += 1
 
-count = 10
-while count >= 0 and count <=10:
-    if count == 0:
-        print "Blastoff!"
-    else:     
-        print count
-    count -= 1
+# count = 10
+# while count >= 0 and count <=10:
+#     if count == 0:
+#         print "Blastoff!"
+#     else:     
+#         print count
+#     count -= 1
 
-    
+# fruits = ["apples", "oranges", "bananas"]
+# index = 0
+# while index < len(fruits):
+#     print fruits[index] 
+#     index += 1
+
+# def sum_nums(num):
+#     count = 0
+#     num_sum = 0
+#     while count < num:
+#         num_sum += count
+#         count += 1   
+#     return num_sum
+
+# print sum_nums(3)
+
+# def sum_nums(num):
+#     count = 0
+#     num_sum = 0
+#     while count <= num:
+#         num_sum += count
+#         count += 1   
+#     return num_sum
+
+# print sum_nums(3)
+
+def sum_nums2(num):
+    count = 0
+    num_sum = 0
+    while count != num:
+        if count >= num:
+            count -= 1
+            num_sum += count
+        else:
+           count += 1
+           num_sum += count
+    return num_sum
+
+print sum_nums2(-3)
+
 
 
 
